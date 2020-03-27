@@ -1,4 +1,4 @@
-package telephone.exchange.station.telephoneexchangestation.model;
+package telephoneexchangestation.model;
 
 public class User {
     private String name;
