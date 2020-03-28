@@ -1,6 +1,6 @@
 package telephone.exchange.station.model;
 
-public class User {
+public class Customer extends BaseEntity{
     private String name;
     private double moneyReserve;
 

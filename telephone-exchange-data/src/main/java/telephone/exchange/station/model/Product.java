@@ -1,8 +1,7 @@
 package telephone.exchange.station.model;
 
-public class Product {
+public class Product extends BaseEntity {
     private String name;
-    private double cost;
 
     public String getName() {
         return name;
@@ -12,11 +11,4 @@ public class Product {
         this.name = name;
     }
 
-    public double getCost() {
-        return cost;
-    }
-
-    public void setCost(double cost) {
-        this.cost = cost;
-    }
 }
