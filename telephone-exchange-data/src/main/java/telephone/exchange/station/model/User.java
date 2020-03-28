@@ -2,7 +2,7 @@ package telephone.exchange.station.model;
 
 public class User {
     private String name;
-    private double account;
+    private double moneyReserve;
 
     public String getName() {
         return name;
@@ -12,11 +12,11 @@ public class User {
         this.name = name;
     }
 
-    public double getAccount() {
-        return account;
+    public double getMoneyReserve() {
+        return moneyReserve;
     }
 
-    public void setAccount(double account) {
-        this.account = account;
+    public void setMoneyReserve(double moneyReserve) {
+        this.moneyReserve = moneyReserve;
     }
 }

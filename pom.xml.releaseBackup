@@ -15,7 +15,7 @@
 
     <groupId>telephone.exchange.station</groupId>
     <artifactId>telephone-exchange-station</artifactId>
-    <version>0.0.5</version>
+    <version>0.0.5-SNAPSHOT</version>
     <name>telephone-exchange-station</name>
     <description>telephone exchange station for EPAM test automation course</description>
 
@@ -41,7 +41,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:Nikita-Yashin-EPAM/telephone-exchange-project.git</developerConnection>
-      <tag>telephone-exchange-station-0.0.5</tag>
+      <tag>telephone-exchange-station-0.0.1</tag>
   </scm>
 
 </project>

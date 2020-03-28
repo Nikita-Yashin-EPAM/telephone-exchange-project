@@ -3,12 +3,11 @@
     <parent>
         <artifactId>telephone-exchange-station</artifactId>
         <groupId>telephone.exchange.station</groupId>
-        <version>0.0.5</version>
+        <version>0.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>telephone-exchange-web</artifactId>
-  <version>0.0.1</version>
     <dependencies>
         <dependency>
             <artifactId>telephone-exchange-data</artifactId>
@@ -48,8 +47,4 @@
     </dependencies>
 
 
-
-  <scm>
-    <tag>telephone-exchange-station-0.0.5</tag>
-  </scm>
 </project>
