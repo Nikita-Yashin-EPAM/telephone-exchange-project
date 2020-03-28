@@ -1,14 +1,8 @@
 package telephone.exchange.station.services;
 
-import java.util.Set;
+import telephone.exchange.station.model.PersonalCustomerAccount;
 
-public interface PersonalUserAccountService {
+public interface PersonalUserAccountService extends CrudService<PersonalCustomerAccount, Long>{
 
     PersonalUserAccountService findByLastName(String lastName);
-
-    PersonalUserAccountService findBy(Long id);
-
-    PersonalUserAccountService save(PersonalUserAccountService personalUserAccountService);
-
-    Set<PersonalUserAccountService> findAll();
 }

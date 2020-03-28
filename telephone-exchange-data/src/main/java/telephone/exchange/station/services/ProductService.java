@@ -1,12 +1,6 @@
 package telephone.exchange.station.services;
 
-import java.util.Set;
+import telephone.exchange.station.model.Product;
 
-public interface ProductService {
-
-    ProductService findBy(Long id);
-
-    ProductService save(ProductService productService);
-
-    Set<ProductService> findAll();
+public interface ProductService extends CrudService<Product, Long>{
 }
