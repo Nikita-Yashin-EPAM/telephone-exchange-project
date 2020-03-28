@@ -1,4 +1,4 @@
-package telephoneexchangestation.model;
+package telephone.exchange.station.model;
 
 public class Product {
     private String name;
