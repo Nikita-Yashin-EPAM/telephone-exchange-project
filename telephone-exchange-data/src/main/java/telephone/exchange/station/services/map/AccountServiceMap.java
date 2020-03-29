@@ -1,12 +1,12 @@
 package telephone.exchange.station.services.map;
 
+import org.springframework.stereotype.Service;
 import telephone.exchange.station.model.Account;
-import telephone.exchange.station.services.CrudService;
+import telephone.exchange.station.services.AccountService;
 
 import java.util.Set;
-
-public class PersonalUserAccountServiceMap extends AbstractMapService<Account, Long>
-implements CrudService<Account, Long> {
+@Service
+public class AccountServiceMap extends AbstractMapService<Account, Long> implements AccountService{
 
     @Override
     public Set<Account> findAll() {
@@ -31,5 +31,10 @@ implements CrudService<Account, Long> {
     @Override
     public Account save(Account object) {
         return super.save(object.getId(), object);
+    }
+
+    @Override
+    public AccountService findByLastName(String lastName) {
+        return null;
     }
 }

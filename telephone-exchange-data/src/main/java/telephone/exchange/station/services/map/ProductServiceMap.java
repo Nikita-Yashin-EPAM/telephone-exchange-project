@@ -1,11 +1,12 @@
 package telephone.exchange.station.services.map;
 
+import org.springframework.stereotype.Service;
 import telephone.exchange.station.model.Product;
-import telephone.exchange.station.services.CrudService;
+import telephone.exchange.station.services.ProductService;
 
 import java.util.Set;
-
-public class ProductServiceMap extends AbstractMapService<Product, Long> implements CrudService<Product, Long> {
+@Service
+public class ProductServiceMap extends AbstractMapService<Product, Long> implements ProductService {
 
     @Override
     public Set<Product> findAll() {
