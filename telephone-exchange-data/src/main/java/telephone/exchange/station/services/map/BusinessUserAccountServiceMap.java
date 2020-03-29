@@ -1,16 +1,15 @@
 package telephone.exchange.station.services.map;
 
-import telephone.exchange.station.model.BusinessCustomerAccount;
 import telephone.exchange.station.services.CrudService;
 
 import java.util.Set;
 
-public class BusinessUserAccountServiceMap extends AbstractMapService<BusinessCustomerAccount, Long>
-        implements CrudService<BusinessCustomerAccount, Long>
+public class BusinessUserAccountServiceMap extends AbstractMapService<BusinessPersonAccount, Long>
+        implements CrudService<BusinessPersonAccount, Long>
 {
 
     @Override
-    public Set<BusinessCustomerAccount> findAll() {
+    public Set<BusinessPersonAccount> findAll() {
         return super.findAll();
     }
 
@@ -20,17 +19,17 @@ public class BusinessUserAccountServiceMap extends AbstractMapService<BusinessCu
     }
 
     @Override
-    public void delete(BusinessCustomerAccount object) {
+    public void delete(BusinessPersonAccount object) {
         super.delete(object);
     }
 
     @Override
-    public BusinessCustomerAccount findByID(Long id) {
+    public BusinessPersonAccount findByID(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public BusinessCustomerAccount save(BusinessCustomerAccount object) {
+    public BusinessPersonAccount save(BusinessPersonAccount object) {
         return super.save(object.getId(), object);
     }
 }
