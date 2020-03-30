@@ -50,13 +50,13 @@ public class DataLoader implements CommandLineRunner {
 
 
         Product product1 = new Product();
-        product1.setId(1L);
+        product1.setId(4L);
         product1.setName("Local calls");
 
         productService.save(product1);
 
         Product product2 = new Product();
-        product1.setId(2L);
+        product1.setId(5L);
         product1.setName("Abroad calls");
 
         productService.save(product2);
