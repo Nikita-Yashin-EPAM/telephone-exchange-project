@@ -30,7 +30,7 @@ public class AccountServiceMap extends AbstractMapService<Account, Long> impleme
 
     @Override
     public Account save(Account object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override

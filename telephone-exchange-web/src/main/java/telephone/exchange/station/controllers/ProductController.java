@@ -16,9 +16,7 @@ public class ProductController {
 
     @RequestMapping({"/products", "/products/index", "/products/index.html"})
     public String listProducts(Model model){
-
         model.addAttribute("products", productService.findAll());
-
         return "products/index";
     }
 }

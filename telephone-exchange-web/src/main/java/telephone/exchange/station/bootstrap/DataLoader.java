@@ -25,24 +25,21 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         Account account1 = new Account();
-        account1.setId(1L);
         account1.setFirstName("Nikita");
         account1.setLastName("Yashin");
 
         accountService.save(account1);
 
         Account account2 = new Account();
-        account1.setId(2L);
-        account1.setFirstName("Vladimir");
-        account1.setLastName("Magerov");
+        account2.setFirstName("Vladimir");
+        account2.setLastName("Magerov");
 
         accountService.save(account2);
 
 
         Account account3 = new Account();
-        account1.setId(3L);
-        account1.setFirstName("Evgeniy");
-        account1.setLastName("Kornyshev");
+        account3.setFirstName("Evgeniy");
+        account3.setLastName("Kornyshev");
 
         accountService.save(account3);
 
@@ -50,14 +47,12 @@ public class DataLoader implements CommandLineRunner {
 
 
         Product product1 = new Product();
-        product1.setId(4L);
         product1.setName("Local calls");
 
         productService.save(product1);
 
         Product product2 = new Product();
-        product1.setId(5L);
-        product1.setName("Abroad calls");
+        product2.setName("Abroad calls");
 
         productService.save(product2);
 
