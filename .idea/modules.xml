@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/telephone-exchange-data/telephone-exchange-data.iml" filepath="$PROJECT_DIR$/telephone-exchange-data/telephone-exchange-data.iml" />
-      <module fileurl="file://$PROJECT_DIR$/telephone-exchange-station (1).iml" filepath="$PROJECT_DIR$/telephone-exchange-station (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/telephone-exchange-station.iml" filepath="$PROJECT_DIR$/telephone-exchange-station.iml" />
       <module fileurl="file://$PROJECT_DIR$/telephone-exchange-station (2).iml" filepath="$PROJECT_DIR$/telephone-exchange-station (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/telephone-exchange-web/telephone-exchange-web.iml" filepath="$PROJECT_DIR$/telephone-exchange-web/telephone-exchange-web.iml" />
     </modules>
