@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Products</title>
+</head>
+<body>
+<!-- /*@thymesVar id="product" type="telephone.exchange.station.model.Product"*/-->
+<h1 th:text="'List of Products'">List of Products</h1>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.id}"></td>
+        <td th:text="${product.name}"></td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
