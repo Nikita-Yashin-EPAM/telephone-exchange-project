@@ -24,26 +24,6 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Account account1 = new Account();
-        account1.setFirstName("Nikita");
-        account1.setLastName("Yashin");
-
-        accountService.save(account1);
-
-        Account account2 = new Account();
-        account2.setFirstName("Vladimir");
-        account2.setLastName("Magerov");
-
-        accountService.save(account2);
-
-
-        Account account3 = new Account();
-        account3.setFirstName("Evgeniy");
-        account3.setLastName("Kornyshev");
-
-        accountService.save(account3);
-
-        System.out.println("Accounts loaded");
 
 
         Product product1 = new Product();
@@ -57,6 +37,31 @@ public class DataLoader implements CommandLineRunner {
         productService.save(product2);
 
         System.out.println("Products loaded");
+
+        Account account1 = new Account();
+        account1.setFirstName("Nikita");
+        account1.setLastName("Yashin");
+        account1.getProducts().add(product2);
+
+        accountService.save(account1);
+
+        Account account2 = new Account();
+        account2.setFirstName("Vladimir");
+        account2.setLastName("Magerov");
+        account2.getProducts().add(product1);
+
+        accountService.save(account2);
+
+
+        Account account3 = new Account();
+        account3.setFirstName("Evgeniy");
+        account3.setLastName("Kornyshev");
+        account3.getProducts().add(product2);
+
+        accountService.save(account3);
+
+        System.out.println("Accounts loaded");
+
 
     }
 }
