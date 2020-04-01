@@ -19,4 +19,8 @@ public class AccountController {
         model.addAttribute ("accounts", accountService.findAll());
         return "accounts/index";
     }
+    @RequestMapping("/find")
+    public String findOwners(){
+        return "notimplemented";
+    }
 }

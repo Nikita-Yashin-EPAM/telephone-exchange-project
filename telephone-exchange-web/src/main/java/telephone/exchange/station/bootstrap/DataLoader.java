@@ -23,9 +23,14 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        int count = productService.findAll().size();
+        if(count == 0){
+            loadData();
+        }
 
+    }
 
-
+    private void loadData() {
         Product product1 = new Product();
         product1.setName("Local calls");
 
@@ -61,7 +66,5 @@ public class DataLoader implements CommandLineRunner {
         accountService.save(account3);
 
         System.out.println("Accounts loaded");
-
-
     }
 }
