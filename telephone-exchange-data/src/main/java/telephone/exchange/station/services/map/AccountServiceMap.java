@@ -56,7 +56,7 @@ public class AccountServiceMap extends AbstractMapService<Account, Long> impleme
     }
 
     @Override
-    public AccountService findByLastName(String lastName) {
+    public Account findByLastName(String lastName) {
         return null;
     }
 }
