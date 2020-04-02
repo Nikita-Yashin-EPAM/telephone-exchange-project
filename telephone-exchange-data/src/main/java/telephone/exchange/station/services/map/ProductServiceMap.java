@@ -1,11 +1,13 @@
 package telephone.exchange.station.services.map;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import telephone.exchange.station.model.Product;
 import telephone.exchange.station.services.ProductService;
 
 import java.util.Set;
 @Service
+@Primary
 public class ProductServiceMap extends AbstractMapService<Product, Long> implements ProductService {
 
     @Override
