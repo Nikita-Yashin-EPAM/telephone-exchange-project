@@ -1,5 +1,6 @@
 package telephone.exchange.station.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import telephone.exchange.station.model.Account;
 import telephone.exchange.station.model.Product;
@@ -8,6 +9,7 @@ import telephone.exchange.station.services.ProductService;
 
 import java.util.Set;
 @Service
+@Profile({"default", "map"})
 public class AccountServiceMap extends AbstractMapService<Account, Long> implements AccountService{
 
     private final ProductService productService;

@@ -46,14 +46,14 @@ public class DataLoader implements CommandLineRunner {
         Account account1 = new Account();
         account1.setFirstName("Nikita");
         account1.setLastName("Yashin");
-        account1.getProducts().add(product2);
+        //account1.getProducts().add(product2);
 
         accountService.save(account1);
 
         Account account2 = new Account();
         account2.setFirstName("Vladimir");
         account2.setLastName("Magerov");
-        account2.getProducts().add(product1);
+        //account2.getProducts().add(product1);
 
         accountService.save(account2);
 
@@ -61,7 +61,7 @@ public class DataLoader implements CommandLineRunner {
         Account account3 = new Account();
         account3.setFirstName("Evgeniy");
         account3.setLastName("Kornyshev");
-        account3.getProducts().add(product2);
+        //account3.getProducts().add(product2);
 
         accountService.save(account3);
 
