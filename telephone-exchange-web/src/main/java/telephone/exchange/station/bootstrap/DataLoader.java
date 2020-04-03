@@ -65,6 +65,7 @@ public class DataLoader implements CommandLineRunner {
 
         accountService.save(account3);
 
+
         System.out.println("Accounts loaded");
     }
 }
