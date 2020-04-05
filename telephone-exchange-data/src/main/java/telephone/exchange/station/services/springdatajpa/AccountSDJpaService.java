@@ -1,5 +1,6 @@
 package telephone.exchange.station.services.springdatajpa;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import telephone.exchange.station.model.Account;
@@ -10,6 +11,7 @@ import telephone.exchange.station.services.AccountService;
 import java.util.HashSet;
 import java.util.Set;
 
+@Slf4j
 @Service
 @Profile("springdatajpa")
 public class AccountSDJpaService implements AccountService {
@@ -40,20 +42,6 @@ public class AccountSDJpaService implements AccountService {
 
     @Override
     public Account save(Account object) {
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
-        System.out.println("##############################################################################");
         return accountRepository.save(object);
     }
 

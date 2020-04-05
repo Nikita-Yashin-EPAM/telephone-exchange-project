@@ -56,9 +56,13 @@ public class AccountServiceMap extends AbstractMapService<Account, Long> impleme
 
 
     }
-
+    // TODO: 2020-04-05 save this as example for Stream impl
     @Override
     public Account findByLastName(String lastName) {
-        return null;
+        return this.findAll()
+                .stream()
+                .filter(account -> account.getLastName().equalsIgnoreCase(lastName))
+                .findFirst()
+                .orElse(null);
     }
 }
