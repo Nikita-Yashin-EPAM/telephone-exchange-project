@@ -55,4 +55,9 @@ class AccountControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(view().name("notimplemented"));
     }
+    @Test
+    void findOwners2() throws Exception {
+        mockMvc.perform(get("/accounts/find"))
+                .andExpect(status().is4xxClientError());
+    }
 }
