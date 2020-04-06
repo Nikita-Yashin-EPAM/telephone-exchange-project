@@ -22,6 +22,7 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 class AccountSDJpaServiceTest {
+
     public static final String ANY_LAST_NAME = "anyLastName";
     @Mock
     AccountRepository accountRepository;
@@ -29,9 +30,7 @@ class AccountSDJpaServiceTest {
     ProductRepository productRepository;
     @InjectMocks
     AccountSDJpaService service;
-
     Account returnAccount;
-
 
     @BeforeEach
     void setUp() {
@@ -65,6 +64,7 @@ class AccountSDJpaServiceTest {
         Account account = service.findByID(1L);
         assertNotNull(account);
     }
+
     @Test
     void findByIDNotFound() {
         when(accountRepository.findById(anyLong())).thenReturn(Optional.empty());
